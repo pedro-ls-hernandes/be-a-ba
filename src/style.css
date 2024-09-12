@@ -1,1 +1,97 @@
+* {
+    box-sizing: border-box;
+    font-family: Inter;
+}
 
+:root {
+    background: #7585ff;
+    color: white;
+    color-scheme: light dark;
+}
+
+body {
+    height: 100vh;
+    width: auto;
+    margin: 0;
+}
+
+#app {
+    height: -webkit-fill-avaliable;
+    height: -moz-avaliable;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+#new-game {
+    margin-top: 2rem;
+    background-color: solid white;
+    color: black;
+    height: 50px;
+    width: 200px;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.25s;
+}
+
+#new-game:hover {
+    background: black;
+    color: white;
+}
+
+.content{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer {
+    width: 100%;
+    background: #343e8cea;
+}
+
+.list-squares {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.square {
+    height: 120px;
+    width: 120px;
+    font-size: 4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border: 2px solid white;
+    border-radius: 1rem;
+    box-shadow: 5px 5px black;
+}
+
+.input {
+    width: 20rem;
+    height: 50px;
+    font-size: 1.5em;
+}
+
+.error {
+    color: red;
+    visibility: hidden;
+}
+
+/*.streak {
+
+}*/
