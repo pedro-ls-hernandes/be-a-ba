@@ -6,6 +6,7 @@ export const game = {
     imputedWords: [],
     newGame: function() {
         this.letters = [];
+        this.imputedWords = [];
 
         const alphabet = 'aabcdeefghiijklmnoopqrstuuvwxyz';
         
@@ -14,7 +15,7 @@ export const game = {
             return alphabet[randomIndex];
         });
 
-
+        this.word = [];
         this.error = false;
         this.streak = 0;
     },

@@ -13,7 +13,7 @@ newGameButtonElem.addEventListener('click', function(){
     }
 
     inputElem.disabled = false;
-    inputElem.value = '';
+    inputElem.value = "";
     inputElem.focus();
     errorElem.style.visibility = 'hidden';
     streakElem.innerHTML = "";
@@ -25,7 +25,7 @@ document.getElementById('form').addEventListener('submit', async function(event)
     const formData = new FormData(event.target);
     const word = formData.get('word');
 
-    const isWordValid = await game.validateWord(word.toUpperCase());
+    const isWordValid = await game.validateWord(word.toLocaleLowerCase());
 
     if(isWordValid){
         streakElem.innerHTML = game.streak;
