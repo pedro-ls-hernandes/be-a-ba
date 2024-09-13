@@ -71,13 +71,31 @@ main {
 .square {
     height: 120px;
     width: 120px;
-    font-size: 4em;
+    font-size: 1em;
     display: flex;
+    background-color: #7585ff;
     justify-content: center;
     align-items: center;
     font-weight: bold;
     border: 2px solid white;
     border-radius: 1rem;
+    /*box-shadow: 5px 5px black;*/
+    animation: rotation 3s linear;
+    animation-iteration-count: infinite;
+    
+    
+}
+
+.square-background {
+    height: 120px;
+    width: 120px;
+    font-size: 4em;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border-radius: 1rem;  
     box-shadow: 5px 5px black;
 }
 
@@ -95,3 +113,11 @@ main {
 /*.streak {
 
 }*/
+
+@keyframes rotation {
+    from {transform: rotateY(0deg);}
+    /*25% {transform: rotateY(90deg);}
+    50% {transform: rotateY(180deg);}
+    75% {transform: rotateY(270deg);}*/
+    to {transform: rotateY(360deg);}
+}
